@@ -3,6 +3,7 @@ import './App.css'
 import Description from '../Description/Description';
 import Options from '../Options/Options';
 import Feedback from '../Feedback/Feedback';
+import { object } from 'prop-types';
 
 export default function App() {
   const [count, setCount] = useState(
@@ -23,7 +24,7 @@ export default function App() {
     <>
       <Description />
       <Options updates={updateFeedback} />
-      <Feedback />
+      <Feedback value={object} />
     </>
   )
 }
