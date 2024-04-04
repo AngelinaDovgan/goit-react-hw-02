@@ -23,7 +23,7 @@ export default function App() {
   return (
     <>
       <Description />
-      <Options updates={updateFeedback} />
+      <Options Good={updateFeedback("good")} />
       <Feedback value={object} />
     </>
   )
