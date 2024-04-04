@@ -1,11 +1,12 @@
 
-export default function Options({ good, neutral, bad, reset }) {
+export default function Options({ OnGood, OnNeutral, OnBad, OnReset, totalFeedback }) {
     return (
         <div>
-            <button onClick={good}>Good</button>
-            <button onClick={neutral}>Neutral</button>
-            <button onClick={bad}>Bad</button>
-            <button onClick={reset}>Reset</button>
+            <button onClick={OnGood}>Good</button>
+            <button onClick={OnNeutral}>Neutral</button>
+            <button onClick={OnBad}>Bad</button>
+            <button onClick={OnReset} style={{ display: totalFeedback > 0 ? "inline" : "none"}}>Reset</button>
+            
         </div>
     )
 }
