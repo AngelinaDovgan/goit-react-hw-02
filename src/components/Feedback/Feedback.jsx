@@ -1,6 +1,7 @@
-export default function Feedback({ value: { good, neutral, bad}, summary, totalReviews }) {
+import css from './Feedback.module.css'
+export default function Feedback({ value: { good, neutral, bad }, summary, totalReviews }) {
     return (
-        <div>
+        <div className={css.fb}>
             <p>Good: {good}</p>
             <p>Bad: {bad}</p>
             <p>Neutral: {neutral}</p>

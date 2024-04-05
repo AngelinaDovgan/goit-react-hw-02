@@ -1,7 +1,7 @@
-
+import css from './Options.module.css'
 export default function Options({ OnGood, OnNeutral, OnBad, OnReset, totalFeedback }) {
     return (
-        <div>
+        <div className={css.btn}>
             <button onClick={OnGood}>Good</button>
             <button onClick={OnNeutral}>Neutral</button>
             <button onClick={OnBad}>Bad</button>
